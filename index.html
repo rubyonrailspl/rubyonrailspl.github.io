@@ -44,32 +44,32 @@
 
     <tr>
       <td>
-        <h2>Natchnienie</h2>
-        <a href="/screencasty" class="no_link_hover"><img class="bordered" alt="Screencast'y" src="/images/screencasts.gif" /></a>
-        <p><a href="/screencasty">Prezentacje video</a></p>
+	<h2>Natchnienie</h2>
+	<a href="/screencasty" class="no_link_hover"><img class="bordered" alt="Screencast'y" src="/images/screencasts.gif" /></a>
+	<p><a href="/screencasty">Prezentacje video</a></p>
 
       </td>
-      
+
       <td>
 
-        <h2>Początki</h2>
-        <a href="/pobierz" class="no_link_hover"><img alt="Pobierz wersję 4.0.2" src="/images/download4.png" /></a>
-        <p><a href="/pobierz">Ostatnie wydanie: wersja 4.0.2 z 3&nbsp;grudnia&nbsp;2013</a></p>
+	<h2>Początki</h2>
+	<a href="/pobierz" class="no_link_hover"><img alt="Pobierz wersję 4.1.4" src="/images/download4-1.png" /></a>
+	<p><a href="/pobierz">Ostatnie wydanie: wersja 4.1.4 z 2&nbsp;lipca&nbsp;2014</a></p>
       </td>
-      
+
       <td>
 
-        <h2>Poznanie</h2>
-        <a href="/dokumentacja" class="no_link_hover"><img width="125" height="163" class="bordered" alt="Dokumentacja" src="/images/agilep.jpg" /></a>
+	<h2>Poznanie</h2>
+	<a href="/dokumentacja" class="no_link_hover"><img width="125" height="163" class="bordered" alt="Dokumentacja" src="/images/agilep.jpg" /></a>
 
-        <p><a href="/dokumentacja">API, Książki, tutoriale, fragmenty kodu</a></p>
+	<p><a href="/dokumentacja">API, Książki, tutoriale, fragmenty kodu</a></p>
       </td>
-      
-      <td>
-        <h2>Społeczność</h2>
-        <a href="/spolecznosc" class="no_link_hover"><img alt="Społeczność" src="/images/participate.gif" /></a>
 
-        <p><a href="/spolecznosc">Dołącz do polskiej społeczności RoR</a></p>
+      <td>
+	<h2>Społeczność</h2>
+	<a href="/spolecznosc" class="no_link_hover"><img alt="Społeczność" src="/images/participate.gif" /></a>
+
+	<p><a href="/spolecznosc">Dołącz do polskiej społeczności RoR</a></p>
       </td>
 
     </tr>
@@ -96,12 +96,12 @@
       this.currentQuote = this.quotes.first();
       this.element.style.position = 'relative';
       this.element.style.height = this.quotes.max(function(quote) {
-        var visible = Element.visible(quote), height;
-        Element.setStyle(quote, {position: 'absolute', width: '100%', left: '0px'});
-        if (!visible) Element.show(quote);
-        height = Element.getHeight(quote);
-        if (!visible) Element.hide(quote);
-        return height;
+	var visible = Element.visible(quote), height;
+	Element.setStyle(quote, {position: 'absolute', width: '100%', left: '0px'});
+	if (!visible) Element.show(quote);
+	height = Element.getHeight(quote);
+	if (!visible) Element.hide(quote);
+	return height;
       }).toString() + 'px';
     },
 
@@ -117,14 +117,14 @@
       var currentQuote = this.currentQuote, nextQuote = this.nextQuote();
 
       new Effect.Parallel([
-        new Effect.Fade(currentQuote, {sync: true}),
-        new Effect.Appear(nextQuote, {sync: true})
+	new Effect.Fade(currentQuote, {sync: true}),
+	new Effect.Appear(nextQuote, {sync: true})
       ], {
-        duration: 2,
-        afterFinish: (function(effect) {
-          this.currentQuote = nextQuote;
-          this.registerCallback();
-        }).bind(this)
+	duration: 2,
+	afterFinish: (function(effect) {
+	  this.currentQuote = nextQuote;
+	  this.registerCallback();
+	}).bind(this)
       })
     }
   }
@@ -203,7 +203,7 @@
 
 
     <div class="content">
-      
+
 
 <div class="sub">
   <h1>Co jest w środku?</h1>
@@ -212,7 +212,7 @@
 <div class="main">
   <p>
     Rails to w pełni wyposażone środowisko do tworzenia <span class="highlight">aplikacji internetowych opartych o bazy danych</span> zgodnie ze wzorcem MVC (Model-View-Controller).
-    Rails daje Ci śrowowisko w pełni oparte o język programowania Ruby - od AJAX-a dostępnego w widokach (View), do zapytania i odpowiedzi w kontrolerach i logiki biznesowej twoich modeli. 
+    Rails daje Ci śrowowisko w pełni oparte o język programowania Ruby - od AJAX-a dostępnego w widokach (View), do zapytania i odpowiedzi w kontrolerach i logiki biznesowej twoich modeli.
     Jedyne czego potrzebujesz do uruchomienia swojej aplikacji to baza danych i serwer WWW.
   </p>
 </div>
@@ -235,48 +235,48 @@
     <tr>
       <td style="padding-right: 15px">
 
-        <a href="http://www.basecamphq.com/" class="no_link_hover"><img alt="Basecamp" src="/images/basecamp.gif" /></a>
-        <p><a href="http://www.basecamphq.com/">Basecamp</a>: Zarządzanie projektem.<br/>Aplikacja, dzięki której powstało Rails.</p>
+	<a href="http://www.basecamphq.com/" class="no_link_hover"><img alt="Basecamp" src="/images/basecamp.gif" /></a>
+	<p><a href="http://www.basecamphq.com/">Basecamp</a>: Zarządzanie projektem.<br/>Aplikacja, dzięki której powstało Rails.</p>
       </td>
       <td>
-        <a href="http://www.twitter.com/" class="no_link_hover"><img src="/images/twitter.jpg" /></a>
+	<a href="http://www.twitter.com/" class="no_link_hover"><img src="/images/twitter.jpg" /></a>
 
-        <p><a href="http://www.twitter.com/">Twitter</a>: (na początku swojego istnienia) - Mikroblogging.</p>
+	<p><a href="http://www.twitter.com/">Twitter</a>: (na początku swojego istnienia) - Mikroblogging.</p>
 
       </td>
-    </tr>                                           
+    </tr>
 
 
     <tr>
       <td style="padding-right: 15px">
 
-        <a href="http://www.groupon.com/" class="no_link_hover"><img src="/images/groupon.jpg" /></a>
-        <p><a href="http://www.groupon.com/">Groupon</a>: Promocjyjne zakupy.</p>
+	<a href="http://www.groupon.com/" class="no_link_hover"><img src="/images/groupon.jpg" /></a>
+	<p><a href="http://www.groupon.com/">Groupon</a>: Promocjyjne zakupy.</p>
       </td>
       <td>
-        <a href="http://www.yellowpages.com/" class="no_link_hover"><img src="/images/yellowpages.jpg" /></a>
+	<a href="http://www.yellowpages.com/" class="no_link_hover"><img src="/images/yellowpages.jpg" /></a>
 
-        <p><a href="http://www.yellowpages.com/">Yellow Pages</a>: Katalog firm.</p>
+	<p><a href="http://www.yellowpages.com/">Yellow Pages</a>: Katalog firm.</p>
 
       </td>
-    </tr>           
+    </tr>
 
     <tr>
       <td style="padding-right: 15px">
 
-        <a href="http://www.github.com/" class="no_link_hover"><img src="/images/github.jpg" /></a>
-        <p><a href="http://www.github.com/">Github</a>: Hosting repozytoriów Git.</p>
+	<a href="http://www.github.com/" class="no_link_hover"><img src="/images/github.jpg" /></a>
+	<p><a href="http://www.github.com/">Github</a>: Hosting repozytoriów Git.</p>
       </td>
       <td>
-        <a href="http://www.lighthouseapp.com/" class="no_link_hover"><img src="/images/lighthouse_1.jpg" /></a>
+	<a href="http://www.lighthouseapp.com/" class="no_link_hover"><img src="/images/lighthouse_1.jpg" /></a>
 
-        <p><a href="http://www.lighthouseapp.com/">Lighthouse</a>: Bugtracker.</p>
+	<p><a href="http://www.lighthouseapp.com/">Lighthouse</a>: Bugtracker.</p>
 
       </td>
-    </tr>   
+    </tr>
     <tr>
       <td colspan="2">
-        <p style="text-align: center"><i><a href="/aplikacje">Zobacz więcej aplikacji</a></i></p>
+	<p style="text-align: center"><i><a href="/aplikacje">Zobacz więcej aplikacji</a></i></p>
 
       </td>
 
@@ -297,7 +297,7 @@
     Jako bazy danych możesz użyć MySQL, PostgreSQL, SQLite, Oracle, SQL Server, DB2, lub Firebird.
     Rails działa prawie pod każdym systemem operacyjnym, ale dla systemu produkcyjnego radzimy użyć jednego z systemów Unix.
   </p>
-  
+
   <p>
 
     <a href="https://shellycloud.com"><img style="margin-top: 5px" align="right" alt="Shelly Cloud" src="/images/shellycloud.svg" /></a> Jeśli potrzebujesz hostingu, <a href="https://shellycloud.com">Shelly Cloud</a> jest bardzo dobrym dostawcą usług związanych z hostowaniem aplikacji Rails, ma interesującą ofertę i doświadczonych pracowników.
@@ -311,7 +311,7 @@
      <p>System Ruby on Rails został stworzony przez <a href="http://david.heinemeierhansson.com/about.html">Davida Heinemeiera Hanssona</a>, w partnerstwie z <a href="http://www.37signals.com">37signals</a>,<br/>
        potem rozszerzany i ulepszany przez setki programistów open-source.
      </p>
-        
+
     <p>Hosting polskiej wersji serwisu jest sponsorowany przez <a href="https://shellycloud.com">Shelly Cloud</a><br/>- dostawcę usług hostingowych dla aplikacji Ruby on Rails.</p>
 
 </div>
@@ -327,4 +327,3 @@ urchinTracker();
 
 
 </html>
-
