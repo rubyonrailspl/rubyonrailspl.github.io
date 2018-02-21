@@ -3,7 +3,7 @@
 
   <head>
     <meta http-equiv="content-type" content="text/html;charset=utf-8" />
-    <meta name="google-site-verification" content="8B93QHC8tv9-lRyT3fKsGubqd8zghRfrqmYAcJFGwPU" />
+    <meta name="google-site-verification" content="71mvx19sfJeKKraQExa1QIEhNYYCrS6BRh3kJVAC58g" />
     <link rel="alternate" type="application/rss+xml" title="Planeta rubyonrails.pl" href="http://pipes.yahoo.com/pipes/pipe.run?_id=IpQJj7_k3BGJlbxaJxOy0Q&_render=rss" />
     <title>Wdrożenie aplikacji Ruby on Rails</title>
     <link href="/stylesheets/normalize.css" rel="stylesheet" /><link href="/stylesheets/screen.css" rel="stylesheet" />
@@ -12,21 +12,21 @@
     <div class="Container">
       <div id="Header">
   <div id="Nav">
-    <a class="" href="/">Wprowadzenie</a> |
-    <a class="" href="/screencasty">Screencasty</a> |
-    <a class="" href="/pobierz">Pobierz</a> |
-    <a class="current" href="/wdrozenie">Wdrożenie</a> |
-    <a class="" href="/dokumentacja">Dokumentacja</a> |
-    <a class="" href="/ekosystem">Ekosystem</a> |
+    <a href="/" class="">Wprowadzenie</a> |
+    <a href="/screencasty" class="">Screencasty</a> |
+    <a href="/pobierz" class="">Pobierz</a> |
+    <a href="/wdrozenie" class="current">Wdrożenie</a> |
+    <a href="/dokumentacja" class="">Dokumentacja</a> |
+    <a href="/ekosystem" class="">Ekosystem</a> |
     <a href="http://forum.rubyonrails.pl">Forum</a> |
     <a href="irc://irc.eu.freenode.net/rubyonrails.pl">IRC</a> |
-    <a lang="en" href="http://github.com/rails/rails/tree/master">Źródła</a>
+    <a href="http://github.com/rails/rails/tree/master" lang="en">Źródła</a>
   </div>
 </div>
 
       <div class="message">
-	<img width="87" height="112" style="margin-right: 10px" alt="Rails" src="/images/rails.png" />
-	  <img src="/images/wdrozenie.gif" />
+	<img src="/images/rails.png" width="87" height="112" style="margin-right: 10px" alt="Rails" />
+	  <img src="/images/wdrozenie.gif" alt="Wdrozenie" />
 
       </div>
     </div>
@@ -40,7 +40,7 @@
 </div>
 
 <div class="main">
-  <img alt="Passenger aka mod_rails" style="margin-left: 10px; margin-top: 10px;" align="right" src="/images/passenger.png" />
+  <img src="/images/passenger.png" alt="Passenger aka mod_rails" style="margin-left: 10px; margin-top: 10px;" align="right" />
   <p>
     Preferowanym rozwiązaniem wdrożeniowym jest <a href="https://www.phusionpassenger.com/">Phusion Passenger</a>. Działa jako moduł do serwera <a href="http://httpd.apache.org/">Apache</a>, <a href="http://nginx.org/">Nginx</a> lub jako <a href="http://www.modrails.com/documentation/Users%20guide%20Standalone.html">samodzielny serwer</a> (używa binariów Nginx) który może służyć zarówno do budowy kodu (zamiast domyślnego Webricka) jak i na produkcji. Jest to najprostsze i często najbardziej efektywne rozwiązanie. Dostępna jest też płatna, rozbudowana wersja <a href="https://www.phusionpassenger.com/enterprise">Passenger Enterprise</a>.
   </p>
@@ -54,7 +54,7 @@
 </div>
 
 <div class="main">
-  <img alt="Mongrel" style="margin-left: 10px;" align="right" src="/images/mongrel.jpg" />
+  <img src="/images/mongrel.jpg" alt="Mongrel" style="margin-left: 10px;" align="right" />
   <p>
     Zanim pojawił się Passenger, aplikacje Rails były z reguły wdrażane przy użyciu serwerów Apache lub <a href="http://nginx.net/">Nginx</a> (wykorzystując albo wbudowane moduły proxy, albo osobny serwer proxy, np. <a href="http://haproxy.1wt.eu/">HAProxy</a>) oraz klastra serwerów aplikacyjnych <a href="http://mongrel.rubyforge.org/">Mongrel</a> lub <a href="http://code.macournoyer.com/thin/">Thin</a>. Takie ustawienie działa znakomicie i wiele osób wciąż je wybiera, choć jest bardziej skomplikowane. Obecnie używa się najczęściej serwera Thin, <a href="http://unicorn.bogomips.org/">Unicorn</a> lub <a href="http://puma.io">Puma</a>.
   </p>
@@ -67,7 +67,7 @@
 </div>
 
 <div class="main">
-  <img alt="JRuby" style="margin-left: 10px;" align="right" src="/images/duke.jpg" />
+  <img src="/images/duke.jpg" alt="JRuby" style="margin-left: 10px;" align="right" />
   <p>
     <a href="http://jruby.org/">JRuby</a> umożliwia uruchamianie aplikacji Rails na Maszynie Wirtualnej Java. Oznacza to, że możesz uruchomić aplikacje Rails na serwerach aplikacyjnych takich jak: <a href="http://www.jboss.org/">JBoss</a> (zobacz: <a href="http://torquebox.org">Torquebox</a>), <a href="https://glassfish.dev.java.net/">Glassfish</a> czy <a href="http://jetty-rails.rubyforge.org/">Jetty</a>. Możesz użyć <a href="http://caldersphere.rubyforge.org/warbler/">Warblera</a> aby spakować aplikację do formatu WAR. Idealny sposób na przeniknięcie do świata "enterprise". 
 </div>
@@ -80,7 +80,7 @@
 </div>
 
 <div class="main">
-  <img alt="Capistrano" style="margin-left: 10px; margin-top: 10px;" align="right" src="/images/capistrano.jpg" />
+  <img src="/images/capistrano.jpg" alt="Capistrano" style="margin-left: 10px; margin-top: 10px;" align="right" />
   <p>
     <a href="http://www.capify.org/">Capistrano</a> umożliwia zautomatyzowanie procesu wdrożenia na serwer produkcyjny lub cały klaster serwerów.
   </p>
@@ -122,3 +122,4 @@ urchinTracker();
 
 
 </html>
+
